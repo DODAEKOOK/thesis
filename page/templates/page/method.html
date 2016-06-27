@@ -1,0 +1,103 @@
+{% extends "page/header.html" %}
+
+{% block content %}
+
+<div class="blog">
+  <div class="blog-content">
+    <!--Basic Text Block-->
+    <div class="row">
+      <h2>Introduction</h2>
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>This chapter shows protocol, flow chart and analysis process about thesis.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--image split-->
+    <div class="row">
+      <h2>Protocol</h2>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.70)'><iframe src="{% static 'img/method/protocol.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+
+    <!--image split-->
+    <div class="row">
+      <h2>Flow Chart</h2>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.70)'><iframe src="{% static 'img/method/flowchart.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+
+    <!--text / image split-->
+    <div class="row">
+      <h2>Analysis process</h2>
+
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>I tried to pre-process using EEG raw data. I made filtering that pass frequency from 8 to 13 Hz with Python.
+              And I calculated each PSD value using filtering EEG data with Python.</p>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 3.30)'><iframe src="{% static 'img/method/filtering.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 2.10)'><iframe src="{% static 'img/method/32psdvalue.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>In squat experiment, some EEG channel could be not connecting or wrong connecting.
+              So, this thesis checked EEG raw data’s PSD value. If'A' channel had wrong value that is very high or low than average, it was removed.
+              And both side channel were checked. As a result, 8 channel were left.</p>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.80)'><iframe src="{% static 'img/method/noiseprocess.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>First, average 8 channel PSD value in alpha wave band was made by Python programming using filtered data. After that, graph was plotted in frequency domain.
+              And to compare between PSD graph before squat and PSD graph after squat came into action. I focused alpha wave PSD (red circle).</p>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 1.80)'><iframe src="{% static 'img/method/8psdavr.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Basic Text Block-->
+    <div class="row">
+      <h2>Body Composition analysis process</h2>
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>To compare between phase angle value before squat and phase angle value after squat come into action.
+              After that, difference between phase angle value before squat and phase angle value after squat is made.</p>
+        </div>
+      </div>
+    </div>
+      <br>
+
+  </div>
+</div>
+
+{% endblock %}

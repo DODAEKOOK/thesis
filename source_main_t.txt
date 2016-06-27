@@ -1,0 +1,199 @@
+<div class="blog">
+  <div class="blog-title">
+    <div class="row">
+      <div class="col-sm-10">
+        <h1>Blog content styles</h1>
+      </div>
+    </div>
+  </div>
+  <div class="blog-content">
+
+    <!--Basic Text Block-->
+    <div class="row">
+      <h2>Basic text block</h2>
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue neque vitae nisl aliquet, laoreet porta tellus pretium. Suspendisse sapien tortor, posuere quis leo eget, scelerisque lacinia lectus. In tortor massa, varius a lorem sed, lacinia
+            semper libero. Integer blandit dignissim velit. Donec nulla odio, pellentesque eget dolor id, consequat accumsan mi. Aenean lobortis enim vel tempor accumsan. Cras quis nunc in ligula iaculis ornare ut tempor ipsum. Pellentesque nec blandit
+            erat, id maximus risus. Cras eleifend neque vel lacinia efficitur. Proin sit amet erat dapibus, ultricies dolor interdum, pharetra turpis.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--In-text list-->
+    <div class="row">
+      <h2>In-text list</h2>
+      <div class="col-sm-12">
+        <ul>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <li>
+              <p>Things here</p>
+            </li>
+            <li>
+              <p>Stuff to say</p>
+            </li>
+            <li>
+              <p>Words are fun</p>
+            </li>
+            <li>
+              <p>Items to talk about</p>
+            </li>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <li>
+              <p>Things here</p>
+            </li>
+            <li>
+              <p>Stuff to say</p>
+            </li>
+            <li>
+              <p>Words are fun</p>
+            </li>
+            <li>
+              <p>Items to talk about</p>
+            </li>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <li>
+              <p>Things here</p>
+            </li>
+            <li>
+              <p>Stuff to say</p>
+            </li>
+            <li>
+              <p>Words are fun</p>
+            </li>
+            <li>
+              <p>Items to talk about</p>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!--Structured list-->
+    <div class="row">
+      <h2>Structured list</h2>
+      <div class="col-sm-10">
+        <div class="blog-structured-list">
+          <ol>
+            <li>List Item</li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue neque vitae nisl aliquet, laoreet porta tellus pretium. Suspendisse sapien tortor, posuere quis leo eget, scelerisque lacinia lectus. In tortor massa, varius a lorem sed,
+              lacinia semper libero. Integer blandit dignissim velit.</p>
+            <li>List Item</li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue neque vitae nisl aliquet, laoreet porta tellus pretium. Suspendisse sapien tortor, posuere quis leo eget, scelerisque lacinia lectus. In tortor massa, varius a lorem sed,
+              lacinia semper libero. Integer blandit dignissim velit.</p>
+            <li>List Item</li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue neque vitae nisl aliquet, laoreet porta tellus pretium. Suspendisse sapien tortor, posuere quis leo eget, scelerisque lacinia lectus. In tortor massa, varius a lorem sed,
+              lacinia semper libero. Integer blandit dignissim velit.</p>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!--Video half-->
+    <div class="row">
+      <h2>Video (half)</h2>
+      <div class="col-sm-5">
+        <div class="blog-basic-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue neque vitae nisl aliquet, laoreet porta tellus pretium. Suspendisse sapien tortor, posuere quis leo eget, scelerisque lacinia lectus. <br><br>Integer blandit dignissim velit.
+            Donec nulla odio, pellentesque eget dolor id, consequat accumsan mi. Aenean lobortis enim vel tempor accumsan. Suspendisse sapien tortor, posuere quis leo eget, scelerisque lacinia lectus. In tortor massa, varius a lorem sed, lacinia semper
+            libero.</p>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="blog-video">
+          <iframe class="youtube" src="https://www.youtube.com/embed/Q5m7yOsQRDw" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!--Code chunk-->
+    <div class="row">
+      <h2>Code chunks (full)</h2>
+      <div class="col-sm-12">
+        <div class="blog-code">
+          <img src="http://s33.postimg.org/uyrlsujtr/Screen_Shot_2016_06_03_at_10_43_12.png" />
+        </div>
+      </div>
+    </div>
+
+    <!--Code text-->
+    <div class="row">
+      <h2>Code text (full)</h2>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          <p>
+            public void onMine( Block block ) { <br/> &nbsp;&nbsp;
+            <span class="code-comment">//then make it do something here</span> <br/> &nbsp;&nbsp;world.strikeLightning( block.getLocation() );<br/> }</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Text / image split-->
+    <div class="row">
+      <h2>Text (4 col) + Code (6 col)</h2>
+      <div class="col-md-4 col-sm-6">
+        <div class="blog-basic-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue neque vitae nisl aliquet, laoreet porta tellus pretium. Suspendisse sapien tortor, posuere quis leo eget, scelerisque lacinia lectus. In tortor massa, varius a lorem sed, lacinia
+            semper libero. Integer blandit dignissim velit. Donec nulla odio, pellentesque eget dolor id, consequat accumsan mi. Aenean lobortis enim vel tempor accumsan.<br><br> In tortor massa, varius a lorem sed, lacinia semper libero. Integer blandit
+            dignissim velit. Donec nulla odio, pellentesque eget dolor id, consequat accumsan mi. Aenean lobortis enim vel tempor accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tortor massa, varius a lorem sed, lacinia semper libero.</p>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-6">
+        <div class="blog-code">
+          <div style='position:relative;padding-bottom:calc(100% / 1.15)'><iframe src='https://gfycat.com/ifr/LoneSeriousBuckeyebutterfly' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Quote-->
+    <div class="row">
+      <h2>Quoted text</h2>
+      <div class="col-sm-10">
+        <div class="blog-quote">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue neque vitae nisl aliquet, laoreet porta tellus pretium. Suspendisse sapien tortor, posuere quis leo eget, scelerisque lacinia lectus. In tortor massa, varius a lorem sed,
+            lacinia semper libero. Integer blandit dignissim velit. Donec nulla odio, pellentesque eget dolor id, consequat accumsan mi. Aenean lobortis enim vel tempor accumsan." </p>
+          <p class="source"> - Someone, <a href="#">somewhere</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Resource Download-->
+    <div class="row">
+      <h2>Resource Download</h2>
+      <div class="col-sm-5">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue neque vitae nisl aliquet, laoreet porta tellus pretium. Suspendisse sapien tortor, posuere quis leo eget, scelerisque lacinia lectus.</p>
+        <ul>
+          <li>
+            <p>Things here</p>
+          </li>
+          <li>
+            <p>Stuff to say</p>
+          </li>
+          <li>
+            <p>Words are fun</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-5 resource-download">
+        <form>
+          <fieldset class="form-group">
+            <label for="InputEmail1"><p>Download this resource</p></label>
+            <p>Don't worry, we'll never share your email with anyone else.</p>
+            <input type="email" class="form-control" id="InputEmail1" placeholder="Enter email">
+          </fieldset>
+          <div class="checkbox">
+            <label>
+                  <input type="checkbox"><p>Email me when new resources are avaiable</p>
+                </label>
+          </div>
+        </form>
+        <a href="#" class="button">Download PDF</a><br/>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

@@ -1,0 +1,1515 @@
+{% block content %}
+    <!-- ############################# svg part1 ################################ -->
+<div class="row">
+    <div class = "col-sm-5 svg-space">
+
+        <div class="study-view-scatter-plot-body-svg">
+        <p style="text-anchor: middle; text-align: center; font-size: 15px; font-weight: bold;">Subject3 (12 cycles / before)</p>
+
+        <svg onload="init(evt)" width="570" height="320">
+        <script type="text/ecmascript">
+            <![CDATA[
+
+            function init(evt)
+            {
+                if ( window.svgDocument == null )
+                {
+                svgDocument = evt.target.ownerDocument;
+                }
+
+                tooltip = svgDocument.getElementById('tooltip');
+            }
+
+            function ShowTooltip(evt, mouseovertext)
+            {
+                tooltip.setAttributeNS(null,"x",evt.offsetX-80);
+                tooltip.setAttributeNS(null,"y",evt.offsetY-10);
+                tooltip.firstChild.data = mouseovertext;
+                tooltip.setAttributeNS(null,"visibility","visible");
+            }
+
+            function HideTooltip(evt)
+            {
+                tooltip.setAttributeNS(null,"visibility","hidden");
+            }
+
+            ]]>
+          </script>
+
+        <!-- base frame -->
+        <g class="brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+        <rect class="background" x="80" width="270" y="10" height="230" style="visibility: hidden; cursor: crosshair;">
+        </rect>
+
+        <rect class="extent" x="102.4944553214828" width="0" y="224.632672578682" height="0" style="cursor: move;">
+        </rect>
+
+        <g class="resize n" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize e" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize s" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize w" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize nw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize ne" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize se" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize sw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        </g>
+
+        <!-- frame for svg -->
+        <g>
+
+        <g class="plots-x-axis" transform="translate(0, 240)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(102.4944553214828,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.0</text>
+        </g>
+
+        <g class="tick" transform="translate(147.49646144771413,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">9.0</text>
+        </g>
+
+        <g class="tick" transform="translate(192.49846757394545,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">10.0</text>
+        </g>
+
+        <g class="tick" transform="translate(237.50047370017677,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">11.0</text>
+        </g>
+
+        <g class="tick" transform="translate(282.5024798264081,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">12.0</text>
+        </g>
+
+        <g class="tick" transform="translate(327.5044859526394,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">13.0</text>
+        </g>
+
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(0, 10)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g class="plots-y-axis" transform="translate(80, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(0,229.76881607009867)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">0.1e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,173.77057134517537)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.4e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,117.77232662025207)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">16.7e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,61.774081895328756)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">25e-12</text>
+        </g>
+
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        </g>
+
+        <!-- each point value -->
+        <g>
+
+        {% for psd in psds3b12 %}
+        <g class="dot-icon">
+        <circle id="{{ psd.sc_tag }}" r="5" cx="{{ psd.Freq_svg }}" cy="{{ psd.PSD_svg }}" fill="red"
+                onmousemove="ShowTooltip(evt, '({{ psd.Freq_value|floatformat }} , {{ psd.PSD_value }})')" onmouseout="HideTooltip(evt)"/>
+        </g>
+        {% endfor %}
+        <text id="tooltip" x="5" y="5" visibility="hidden" style="font-size: 13px; font-weight: bold;"> num </text>
+
+        </g>
+
+        <!-- x axis label, y axis label -->
+        <g>
+            <text x="200" y="300" class="plots-title-x" style="text-anchor: middle; font-size: 11px; font-weight: bold;">Frequency</text>
+
+            <text transform="rotate(-90)" x="-125" y="20" class="plots-title-y" style="text-anchor: middle; font-size: 11px; font-weight: bold;">PSD value</text>
+        </g>
+
+        </svg>
+
+        <p class="avr_st"> Average PSD : {{ psds3b12_avr }}</p>
+
+        </div>
+
+    </div>
+
+    <div class = "col-sm-5 svg-space">
+
+        <div class="study-view-scatter-plot-body-svg">
+        <p style="text-anchor: middle; text-align: center; font-size: 15px; font-weight: bold;">Subject3 (12 cycles / after)</p>
+
+        <svg onload="init(evt)" width="570" height="320">
+
+        <script type="text/ecmascript">
+            <![CDATA[
+
+            function init(evt)
+            {
+                if ( window.svgDocument == null )
+                {
+                svgDocument = evt.target.ownerDocument;
+                }
+
+                tooltip1 = svgDocument.getElementById('tooltip1');
+            }
+
+            function ShowTooltip1(evt, mouseovertext)
+            {
+                tooltip1.setAttributeNS(null,"x",evt.offsetX-80);
+                tooltip1.setAttributeNS(null,"y",evt.offsetY-10);
+                tooltip1.firstChild.data = mouseovertext;
+                tooltip1.setAttributeNS(null,"visibility","visible");
+            }
+
+            function HideTooltip1(evt)
+            {
+                tooltip1.setAttributeNS(null,"visibility","hidden");
+            }
+
+            ]]>
+          </script>
+
+        <!-- base frame -->
+        <g class="brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+        <rect class="background" x="80" width="270" y="10" height="230" style="visibility: hidden; cursor: crosshair;">
+        </rect>
+
+        <rect class="extent" x="102.4944553214828" width="0" y="224.632672578682" height="0" style="cursor: move;">
+        </rect>
+
+        <g class="resize n" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize e" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize s" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize w" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize nw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize ne" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize se" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize sw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        </g>
+
+        <!-- frame for svg -->
+        <g>
+
+        <g class="plots-x-axis" transform="translate(0, 240)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(102.4944553214828,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.0</text>
+        </g>
+
+        <g class="tick" transform="translate(147.49646144771413,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">9.0</text>
+        </g>
+
+        <g class="tick" transform="translate(192.49846757394545,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">10.0</text>
+        </g>
+
+        <g class="tick" transform="translate(237.50047370017677,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">11.0</text>
+        </g>
+
+        <g class="tick" transform="translate(282.5024798264081,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">12.0</text>
+        </g>
+
+        <g class="tick" transform="translate(327.5044859526394,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">13.0</text>
+        </g>
+
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(0, 10)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g class="plots-y-axis" transform="translate(80, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(0,229.76881607009867)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">0.1e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,173.77057134517537)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.4e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,117.77232662025207)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">16.7e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,61.774081895328756)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">25e-12</text>
+        </g>
+
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        </g>
+
+        <!-- each point value -->
+        <g>
+
+        {% for psd in psds3a12 %}
+        <g class="dot-icon">
+        <circle id="{{ psd.sc_tag }}" r="5" cx="{{ psd.Freq_svg }}" cy="{{ psd.PSD_svg }}" fill="red"
+                onmousemove="ShowTooltip1(evt, '({{ psd.Freq_value|floatformat }} , {{ psd.PSD_value }})')" onmouseout="HideTooltip1(evt)"/>
+        </g>
+
+        {% endfor %}
+        <text id="tooltip1" x="5" y="5" visibility="hidden" style="font-size: 13px; font-weight: bold;"> num </text>
+
+
+
+        </g>
+
+        <!-- x axis label, y axis label -->
+        <g>
+            <text x="200" y="300" class="plots-title-x" style="text-anchor: middle; font-size: 11px; font-weight: bold;">Frequency</text>
+
+            <text transform="rotate(-90)" x="-125" y="20" class="plots-title-y" style="text-anchor: middle; font-size: 11px; font-weight: bold;">PSD value</text>
+        </g>
+
+        </svg>
+        <p class="avr_st"> Average PSD : {{ psds3a12_avr }}</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class = "col-sm-5 svg-space">
+
+        <div class="study-view-scatter-plot-body-svg">
+        <p style="text-anchor: middle; text-align: center; font-size: 15px; font-weight: bold;">Subject3 (14 cycles / before)</p>
+
+        <svg onload="init(evt)" width="570" height="320">
+        <script type="text/ecmascript">
+            <![CDATA[
+
+            function init(evt)
+            {
+                if ( window.svgDocument == null )
+                {
+                svgDocument = evt.target.ownerDocument;
+                }
+
+                tooltip2 = svgDocument.getElementById('tooltip2');
+            }
+
+            function ShowTooltip2(evt, mouseovertext)
+            {
+                tooltip2.setAttributeNS(null,"x",evt.offsetX-80);
+                tooltip2.setAttributeNS(null,"y",evt.offsetY-10);
+                tooltip2.firstChild.data = mouseovertext;
+                tooltip2.setAttributeNS(null,"visibility","visible");
+            }
+
+            function HideTooltip2(evt)
+            {
+                tooltip2.setAttributeNS(null,"visibility","hidden");
+            }
+
+            ]]>
+          </script>
+
+        <!-- base frame -->
+        <g class="brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+        <rect class="background" x="80" width="270" y="10" height="230" style="visibility: hidden; cursor: crosshair;">
+        </rect>
+
+        <rect class="extent" x="102.4944553214828" width="0" y="224.632672578682" height="0" style="cursor: move;">
+        </rect>
+
+        <g class="resize n" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize e" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize s" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize w" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize nw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize ne" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize se" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize sw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        </g>
+
+        <!-- frame for svg -->
+        <g>
+
+        <g class="plots-x-axis" transform="translate(0, 240)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(102.4944553214828,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.0</text>
+        </g>
+
+        <g class="tick" transform="translate(147.49646144771413,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">9.0</text>
+        </g>
+
+        <g class="tick" transform="translate(192.49846757394545,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">10.0</text>
+        </g>
+
+        <g class="tick" transform="translate(237.50047370017677,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">11.0</text>
+        </g>
+
+        <g class="tick" transform="translate(282.5024798264081,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">12.0</text>
+        </g>
+
+        <g class="tick" transform="translate(327.5044859526394,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">13.0</text>
+        </g>
+
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(0, 10)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g class="plots-y-axis" transform="translate(80, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(0,229.76881607009867)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">0.1e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,173.77057134517537)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.4e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,117.77232662025207)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">16.7e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,61.774081895328756)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">25e-12</text>
+        </g>
+
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        </g>
+
+        <!-- each point value -->
+        <g>
+
+        {% for psd in psds3b14 %}
+        <g class="dot-icon">
+        <circle id="{{ psd.sc_tag }}" r="5" cx="{{ psd.Freq_svg }}" cy="{{ psd.PSD_svg }}" fill="red"
+                onmousemove="ShowTooltip2(evt, '({{ psd.Freq_value|floatformat }} , {{ psd.PSD_value }})')" onmouseout="HideTooltip2(evt)"/>
+        </g>
+
+        {% endfor %}
+        <text id="tooltip2" x="5" y="5" visibility="hidden" style="font-size: 13px; font-weight: bold;"> num </text>
+
+
+
+        </g>
+
+        <!-- x axis label, y axis label -->
+        <g>
+            <text x="200" y="300" class="plots-title-x" style="text-anchor: middle; font-size: 11px; font-weight: bold;">Frequency</text>
+
+            <text transform="rotate(-90)" x="-125" y="20" class="plots-title-y" style="text-anchor: middle; font-size: 11px; font-weight: bold;">PSD value</text>
+        </g>
+
+        </svg>
+        <p class="avr_st"> Average PSD : {{ psds3b14_avr }}</p>
+        </div>
+
+    </div>
+
+    <div class = "col-sm-5 svg-space">
+
+        <div class="study-view-scatter-plot-body-svg">
+        <p style="text-anchor: middle; text-align: center; font-size: 15px; font-weight: bold;">Subject3 (14 cycles / after)</p>
+
+        <svg onload="init(evt)" width="570" height="320">
+
+        <script type="text/ecmascript">
+            <![CDATA[
+
+            function init(evt)
+            {
+                if ( window.svgDocument == null )
+                {
+                svgDocument = evt.target.ownerDocument;
+                }
+
+                tooltip3 = svgDocument.getElementById('tooltip3');
+            }
+
+            function ShowTooltip3(evt, mouseovertext)
+            {
+                tooltip3.setAttributeNS(null,"x",evt.offsetX-80);
+                tooltip3.setAttributeNS(null,"y",evt.offsetY-10);
+                tooltip3.firstChild.data = mouseovertext;
+                tooltip3.setAttributeNS(null,"visibility","visible");
+            }
+
+            function HideTooltip3(evt)
+            {
+                tooltip3.setAttributeNS(null,"visibility","hidden");
+            }
+
+            ]]>
+          </script>
+
+        <!-- base frame -->
+        <g class="brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+        <rect class="background" x="80" width="270" y="10" height="230" style="visibility: hidden; cursor: crosshair;">
+        </rect>
+
+        <rect class="extent" x="102.4944553214828" width="0" y="224.632672578682" height="0" style="cursor: move;">
+        </rect>
+
+        <g class="resize n" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize e" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize s" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize w" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize nw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize ne" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize se" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize sw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        </g>
+
+        <!-- frame for svg -->
+        <g>
+
+        <g class="plots-x-axis" transform="translate(0, 240)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(102.4944553214828,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.0</text>
+        </g>
+
+        <g class="tick" transform="translate(147.49646144771413,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">9.0</text>
+        </g>
+
+        <g class="tick" transform="translate(192.49846757394545,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">10.0</text>
+        </g>
+
+        <g class="tick" transform="translate(237.50047370017677,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">11.0</text>
+        </g>
+
+        <g class="tick" transform="translate(282.5024798264081,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">12.0</text>
+        </g>
+
+        <g class="tick" transform="translate(327.5044859526394,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">13.0</text>
+        </g>
+
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(0, 10)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g class="plots-y-axis" transform="translate(80, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(0,229.76881607009867)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">0.1e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,173.77057134517537)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.4e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,117.77232662025207)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">16.7e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,61.774081895328756)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">25e-12</text>
+        </g>
+
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        </g>
+
+        <!-- each point value -->
+        <g>
+
+        {% for psd in psds3a14 %}
+        <g class="dot-icon">
+        <circle id="{{ psd.sc_tag }}" r="5" cx="{{ psd.Freq_svg }}" cy="{{ psd.PSD_svg }}" fill="red"
+                onmousemove="ShowTooltip3(evt, '({{ psd.Freq_value|floatformat }} , {{ psd.PSD_value }})')" onmouseout="HideTooltip3(evt)"/>
+        </g>
+
+        {% endfor %}
+        <text id="tooltip3" x="5" y="5" visibility="hidden" style="font-size: 13px; font-weight: bold;"> num </text>
+
+
+
+        </g>
+
+        <!-- x axis label, y axis label -->
+        <g>
+            <text x="200" y="300" class="plots-title-x" style="text-anchor: middle; font-size: 11px; font-weight: bold;">Frequency</text>
+
+            <text transform="rotate(-90)" x="-125" y="20" class="plots-title-y" style="text-anchor: middle; font-size: 11px; font-weight: bold;">PSD value</text>
+        </g>
+
+        </svg>
+        <p class="avr_st"> Average PSD : {{ psds3a14_avr }}</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class = "col-sm-5 svg-space">
+
+        <div class="study-view-scatter-plot-body-svg">
+        <p style="text-anchor: middle; text-align: center; font-size: 15px; font-weight: bold;">Subject3 (16 cycles / before)</p>
+
+        <svg onload="init(evt)" width="570" height="320">
+
+        <script type="text/ecmascript">
+            <![CDATA[
+
+            function init(evt)
+            {
+                if ( window.svgDocument == null )
+                {
+                svgDocument = evt.target.ownerDocument;
+                }
+
+                tooltip4 = svgDocument.getElementById('tooltip4');
+            }
+
+            function ShowTooltip4(evt, mouseovertext)
+            {
+                tooltip4.setAttributeNS(null,"x",evt.offsetX-80);
+                tooltip4.setAttributeNS(null,"y",evt.offsetY-10);
+                tooltip4.firstChild.data = mouseovertext;
+                tooltip4.setAttributeNS(null,"visibility","visible");
+            }
+
+            function HideTooltip4(evt)
+            {
+                tooltip4.setAttributeNS(null,"visibility","hidden");
+            }
+
+            ]]>
+          </script>
+
+        <!-- base frame -->
+        <g class="brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+        <rect class="background" x="80" width="270" y="10" height="230" style="visibility: hidden; cursor: crosshair;">
+        </rect>
+
+        <rect class="extent" x="102.4944553214828" width="0" y="224.632672578682" height="0" style="cursor: move;">
+        </rect>
+
+        <g class="resize n" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize e" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize s" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize w" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize nw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize ne" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize se" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize sw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        </g>
+
+        <!-- frame for svg -->
+        <g>
+
+        <g class="plots-x-axis" transform="translate(0, 240)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(102.4944553214828,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.0</text>
+        </g>
+
+        <g class="tick" transform="translate(147.49646144771413,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">9.0</text>
+        </g>
+
+        <g class="tick" transform="translate(192.49846757394545,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">10.0</text>
+        </g>
+
+        <g class="tick" transform="translate(237.50047370017677,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">11.0</text>
+        </g>
+
+        <g class="tick" transform="translate(282.5024798264081,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">12.0</text>
+        </g>
+
+        <g class="tick" transform="translate(327.5044859526394,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">13.0</text>
+        </g>
+
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(0, 10)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g class="plots-y-axis" transform="translate(80, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(0,229.76881607009867)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">0.1e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,173.77057134517537)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.4e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,117.77232662025207)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">16.7e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,61.774081895328756)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">25e-12</text>
+        </g>
+
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        </g>
+
+        <!-- each point value -->
+        <g>
+
+        {% for psd in psds3b16 %}
+        <g class="dot-icon">
+        <circle id="{{ psd.sc_tag }}" r="5" cx="{{ psd.Freq_svg }}" cy="{{ psd.PSD_svg }}" fill="red"
+                onmousemove="ShowTooltip4(evt, '({{ psd.Freq_value|floatformat }} , {{ psd.PSD_value }})')" onmouseout="HideTooltip4(evt)"/>
+        </g>
+
+        {% endfor %}
+        <text id="tooltip4" x="5" y="5" visibility="hidden" style="font-size: 13px; font-weight: bold;"> num </text>
+
+
+        </g>
+
+        <!-- x axis label, y axis label -->
+        <g>
+            <text x="200" y="300" class="plots-title-x" style="text-anchor: middle; font-size: 11px; font-weight: bold;">Frequency</text>
+
+            <text transform="rotate(-90)" x="-125" y="20" class="plots-title-y" style="text-anchor: middle; font-size: 11px; font-weight: bold;">PSD value</text>
+        </g>
+
+        </svg>
+        <p class="avr_st"> Average PSD : {{ psds3b16_avr }}</p>
+        </div>
+
+    </div>
+
+    <div class = "col-sm-5 svg-space">
+
+        <div class="study-view-scatter-plot-body-svg">
+        <p style="text-anchor: middle; text-align: center; font-size: 15px; font-weight: bold;">Subject3 (16 cycles / after)</p>
+
+        <svg onload="init(evt)" width="570" height="320">
+
+        <script type="text/ecmascript">
+            <![CDATA[
+
+            function init(evt)
+            {
+                if ( window.svgDocument == null )
+                {
+                svgDocument = evt.target.ownerDocument;
+                }
+
+                tooltip5 = svgDocument.getElementById('tooltip5');
+            }
+
+            function ShowTooltip5(evt, mouseovertext)
+            {
+                tooltip5.setAttributeNS(null,"x",evt.offsetX-80);
+                tooltip5.setAttributeNS(null,"y",evt.offsetY-10);
+                tooltip5.firstChild.data = mouseovertext;
+                tooltip5.setAttributeNS(null,"visibility","visible");
+            }
+
+            function HideTooltip5(evt)
+            {
+                tooltip5.setAttributeNS(null,"visibility","hidden");
+            }
+
+            ]]>
+          </script>
+
+        <!-- base frame -->
+        <g class="brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+        <rect class="background" x="80" width="270" y="10" height="230" style="visibility: hidden; cursor: crosshair;">
+        </rect>
+
+        <rect class="extent" x="102.4944553214828" width="0" y="224.632672578682" height="0" style="cursor: move;">
+        </rect>
+
+        <g class="resize n" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize e" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize s" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize w" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize nw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize ne" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize se" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize sw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        </g>
+
+        <!-- frame for svg -->
+        <g>
+
+        <g class="plots-x-axis" transform="translate(0, 240)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(102.4944553214828,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.0</text>
+        </g>
+
+        <g class="tick" transform="translate(147.49646144771413,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">9.0</text>
+        </g>
+
+        <g class="tick" transform="translate(192.49846757394545,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">10.0</text>
+        </g>
+
+        <g class="tick" transform="translate(237.50047370017677,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">11.0</text>
+        </g>
+
+        <g class="tick" transform="translate(282.5024798264081,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">12.0</text>
+        </g>
+
+        <g class="tick" transform="translate(327.5044859526394,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">13.0</text>
+        </g>
+
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(0, 10)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g class="plots-y-axis" transform="translate(80, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(0,229.76881607009867)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">0.1e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,173.77057134517537)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.4e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,117.77232662025207)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">16.7e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,61.774081895328756)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">25e-12</text>
+        </g>
+
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        </g>
+
+        <!-- each point value -->
+        <g>
+
+        {% for psd in psds3a16 %}
+        <g class="dot-icon">
+        <circle id="{{ psd.sc_tag }}" r="5" cx="{{ psd.Freq_svg }}" cy="{{ psd.PSD_svg }}" fill="red"
+                onmousemove="ShowTooltip5(evt, '({{ psd.Freq_value|floatformat }} , {{ psd.PSD_value }})')" onmouseout="HideTooltip5(evt)"/>
+        </g>
+
+        {% endfor %}
+        <text id="tooltip5" x="5" y="5" visibility="hidden" style="font-size: 13px; font-weight: bold;"> num </text>
+
+
+        </g>
+
+        <!-- x axis label, y axis label -->
+        <g>
+            <text x="200" y="300" class="plots-title-x" style="text-anchor: middle; font-size: 11px; font-weight: bold;">Frequency</text>
+
+            <text transform="rotate(-90)" x="-125" y="20" class="plots-title-y" style="text-anchor: middle; font-size: 11px; font-weight: bold;">PSD value</text>
+        </g>
+
+        </svg>
+        <p class="avr_st"> Average PSD : {{ psds3a16_avr }}</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class = "col-sm-5 svg-space">
+
+        <div class="study-view-scatter-plot-body-svg">
+        <p style="text-anchor: middle; text-align: center; font-size: 15px; font-weight: bold;">Subject3 (18 cycles / before)</p>
+
+        <svg onload="init(evt)" width="570" height="320">
+
+        <script type="text/ecmascript">
+            <![CDATA[
+
+            function init(evt)
+            {
+                if ( window.svgDocument == null )
+                {
+                svgDocument = evt.target.ownerDocument;
+                }
+
+                tooltip6 = svgDocument.getElementById('tooltip6');
+            }
+
+            function ShowTooltip6(evt, mouseovertext)
+            {
+                tooltip6.setAttributeNS(null,"x",evt.offsetX-80);
+                tooltip6.setAttributeNS(null,"y",evt.offsetY-10);
+                tooltip6.firstChild.data = mouseovertext;
+                tooltip6.setAttributeNS(null,"visibility","visible");
+            }
+
+            function HideTooltip6(evt)
+            {
+                tooltip6.setAttributeNS(null,"visibility","hidden");
+            }
+
+            ]]>
+          </script>
+
+        <!-- base frame -->
+        <g class="brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+        <rect class="background" x="80" width="270" y="10" height="230" style="visibility: hidden; cursor: crosshair;">
+        </rect>
+
+        <rect class="extent" x="102.4944553214828" width="0" y="224.632672578682" height="0" style="cursor: move;">
+        </rect>
+
+        <g class="resize n" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize e" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize s" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize w" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize nw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize ne" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize se" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize sw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        </g>
+
+        <!-- frame for svg -->
+        <g>
+
+        <g class="plots-x-axis" transform="translate(0, 240)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(102.4944553214828,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.0</text>
+        </g>
+
+        <g class="tick" transform="translate(147.49646144771413,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">9.0</text>
+        </g>
+
+        <g class="tick" transform="translate(192.49846757394545,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">10.0</text>
+        </g>
+
+        <g class="tick" transform="translate(237.50047370017677,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">11.0</text>
+        </g>
+
+        <g class="tick" transform="translate(282.5024798264081,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">12.0</text>
+        </g>
+
+        <g class="tick" transform="translate(327.5044859526394,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">13.0</text>
+        </g>
+
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(0, 10)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g class="plots-y-axis" transform="translate(80, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(0,229.76881607009867)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">0.1e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,173.77057134517537)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.4e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,117.77232662025207)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">16.7e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,61.774081895328756)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">25e-12</text>
+        </g>
+
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        </g>
+
+        <!-- each point value -->
+        <g>
+
+        {% for psd in psds3b18 %}
+        <g class="dot-icon">
+        <circle id="{{ psd.sc_tag }}" r="5" cx="{{ psd.Freq_svg }}" cy="{{ psd.PSD_svg }}" fill="red"
+                onmousemove="ShowTooltip6(evt, '({{ psd.Freq_value|floatformat }} , {{ psd.PSD_value }})')" onmouseout="HideTooltip6(evt)"/>
+        </g>
+
+        {% endfor %}
+        <text id="tooltip6" x="5" y="5" visibility="hidden" style="font-size: 13px; font-weight: bold;"> num </text>
+
+
+        </g>
+
+        <!-- x axis label, y axis label -->
+        <g>
+            <text x="200" y="300" class="plots-title-x" style="text-anchor: middle; font-size: 11px; font-weight: bold;">Frequency</text>
+
+            <text transform="rotate(-90)" x="-125" y="20" class="plots-title-y" style="text-anchor: middle; font-size: 11px; font-weight: bold;">PSD value</text>
+        </g>
+
+        </svg>
+        <p class="avr_st"> Average PSD : {{ psds3b18_avr }}</p>
+        </div>
+
+    </div>
+
+    <div class = "col-sm-5 svg-space">
+
+        <div class="study-view-scatter-plot-body-svg">
+        <p style="text-anchor: middle; text-align: center; font-size: 15px; font-weight: bold;">Subject3 (18 cycles / after)</p>
+
+        <svg onload="init(evt)" width="570" height="320">
+
+        <script type="text/ecmascript">
+            <![CDATA[
+
+            function init(evt)
+            {
+                if ( window.svgDocument == null )
+                {
+                svgDocument = evt.target.ownerDocument;
+                }
+
+                tooltip7 = svgDocument.getElementById('tooltip7');
+            }
+
+            function ShowTooltip7(evt, mouseovertext)
+            {
+                tooltip7.setAttributeNS(null,"x",evt.offsetX-80);
+                tooltip7.setAttributeNS(null,"y",evt.offsetY-10);
+                tooltip7.firstChild.data = mouseovertext;
+                tooltip7.setAttributeNS(null,"visibility","visible");
+            }
+
+            function HideTooltip7(evt)
+            {
+                tooltip7.setAttributeNS(null,"visibility","hidden");
+            }
+
+            ]]>
+          </script>
+
+        <!-- base frame -->
+        <g class="brush" style="pointer-events: all; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+        <rect class="background" x="80" width="270" y="10" height="230" style="visibility: hidden; cursor: crosshair;">
+        </rect>
+
+        <rect class="extent" x="102.4944553214828" width="0" y="224.632672578682" height="0" style="cursor: move;">
+        </rect>
+
+        <g class="resize n" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize e" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize s" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ns-resize; display: none;">
+        <rect y="-3" width="0" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize w" transform="translate(102.4944553214828,224.632672578682)" style="cursor: ew-resize; display: none;">
+        <rect x="-3" width="6" height="0" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize nw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize ne" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize se" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nwse-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        <g class="resize sw" transform="translate(102.4944553214828,224.632672578682)" style="cursor: nesw-resize; display: none;">
+        <rect x="-3" y="-3" width="6" height="6" style="visibility: hidden;">
+        </rect>
+        </g>
+
+        </g>
+
+        <!-- frame for svg -->
+        <g>
+
+        <g class="plots-x-axis" transform="translate(0, 240)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(102.4944553214828,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.0</text>
+        </g>
+
+        <g class="tick" transform="translate(147.49646144771413,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">9.0</text>
+        </g>
+
+        <g class="tick" transform="translate(192.49846757394545,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">10.0</text>
+        </g>
+
+        <g class="tick" transform="translate(237.50047370017677,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">11.0</text>
+        </g>
+
+        <g class="tick" transform="translate(282.5024798264081,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">12.0</text>
+        </g>
+
+        <g class="tick" transform="translate(327.5044859526394,0)" style="opacity: 1;">
+        <line y2="6" x2="0"></line>
+        <text dy=".71em" y="9" x="0" style="text-anchor: middle; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">13.0</text>
+        </g>
+
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(0, 10)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M80,0V0H350V0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g class="plots-y-axis" transform="translate(80, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+
+        <g class="tick" transform="translate(0,229.76881607009867)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">0.1e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,173.77057134517537)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">8.4e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,117.77232662025207)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">16.7e-12</text>
+        </g>
+
+        <g class="tick" transform="translate(0,61.774081895328756)" style="opacity: 1;"><line x2="-6" y2="0"></line>
+        <text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 11px; stroke-width: 0.5; stroke: black; fill: black;">25e-12</text>
+        </g>
+
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        <g transform="translate(350, 0)" style="stroke-width: 1; fill: none; stroke: black; shape-rendering: crispEdges;">
+        <path class="domain" d="M0,10H0V240H0"></path>
+        </g>
+
+        </g>
+
+        <!-- each point value -->
+        <g>
+
+        {% for psd in psds3a18 %}
+        <g class="dot-icon">
+        <circle id="{{ psd.sc_tag }}" r="5" cx="{{ psd.Freq_svg }}" cy="{{ psd.PSD_svg }}" fill="red"
+                onmousemove="ShowTooltip7(evt, '({{ psd.Freq_value|floatformat }} , {{ psd.PSD_value }})')" onmouseout="HideTooltip7(evt)"/>
+        </g>
+
+        {% endfor %}
+        <text id="tooltip7" x="5" y="5" visibility="hidden" style="font-size: 13px; font-weight: bold;"> num </text>
+
+
+        </g>
+
+        <!-- x axis label, y axis label -->
+        <g>
+            <text x="200" y="300" class="plots-title-x" style="text-anchor: middle; font-size: 11px; font-weight: bold;">Frequency</text>
+
+            <text transform="rotate(-90)" x="-125" y="20" class="plots-title-y" style="text-anchor: middle; font-size: 11px; font-weight: bold;">PSD value</text>
+        </g>
+
+        </svg>
+        <p class="avr_st"> Average PSD : {{ psds3a18_avr }}</p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

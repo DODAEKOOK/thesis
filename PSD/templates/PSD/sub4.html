@@ -1,0 +1,50 @@
+{% extends "page/header.html" %}
+{% block content %}
+
+<div class="blog">
+<div class="blog-content">
+    <div class="row">
+    <h2>Subject PSD data</h2>
+    <div class="row button-align">
+        <a href="/psd" class="action-button shadow animate black">Result</a>
+        <a href="/psd/sb1" class="action-button shadow animate blue">Subject1</a>
+        <a href="/psd/sb2" class="action-button shadow animate red">Subject2</a>
+        <a href="/psd/sb3" class="action-button shadow animate green">Subject3</a>
+        <a href="/psd/sb4" class="action-button shadow animate yellow">Subject4</a>
+    </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <h2>Data</h2>
+        {% include "PSD/includes/S4_ps.html" %}
+    </div>
+</div>
+</div>
+<br><br>
+{% endblock %}
+
+    <!--
+    <div class="row">
+        <div class = "col-sm-6">
+            <p>Power Spectral Density vlaue</p>
+        </div>
+        <div class = "col-sm-6">
+            <p>Freq.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+    {% for psd in psds %}
+        <div class = "col-sm-6">
+            <p>{{ psd.PSD_value }}</p>
+        </div>
+        <div class = "col-sm-6">
+            <p>{{ psd.Freq_value }}</p>
+        </div>
+    {% endfor %}
+    </div>
+    -->

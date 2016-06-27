@@ -1,0 +1,137 @@
+{% extends "page/header.html" %}
+
+{% block content %}
+
+<div class="blog">
+  <div class="blog-content">
+    <!--Basic Text Block-->
+    <div class="row">
+      <h2>Hello! Guest</h2>
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>This page is my thesis summary. My name is DODAEGUK. I came to Malaysia in the capacity of	exchange student from Inje University.
+              When I studied in University of Malaya, I had a chance about this thesis. I wrote my thesis for degree of bachelor in Biomedical Engineering in UM.
+              Thanks to every people that help to me and this thesis.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Basic Text Block-->
+    <div class="row">
+      <h2>Abstract</h2>
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>Brain has many functions such as control motor function, interpret information and control body movement.
+            It is essential to improve the brain functionality. One way to improve the brain’s functionality is by performing superbrain yoga.
+            Superbrain yoga is an exercise that involves squatting. This squatting activity requires special position to energize and recharge the brain’s functionality.
+            Thus, the objectives of this research study are to analyse the change of brain signal and body composition before and after performing squatting activity and determine optimal number of squatting cycles as well.
+            The methodology of this study composed of electroencephalogram (EEG) experiment and EEG signal analysis.
+            EEG experiment is conducted by using 32 channel EEG system. The data collected is analysed using MATLAB and Python software.
+            Alpha band (8Hz~13Hz) in EEG signal is extracted as this band is the main concern in this study. This is because alpha band is corresponds to mental relaxation state.
+            Power Spectral Density (PSD) values obtained from the analysis are compared between after squatting and before squatting activity.
+            Body composition is analysed using bioimpedance analysis (BIA) as well by comparing phase angle between after squatting and before squatting activity.
+            The differences between PSD values of EEG signal before and after squatting are calculated. Most of the results show increasing tendency pattern.
+            The results showed that PSD values for 14 cycles squatting is the highest value as compared to other cycles.
+            On the other hand, phase angle obtained from BIA for 14 cycles squatting shows the highest values as compared to other cycles.
+            In conclusion, 14 cycles squatting is the best cycle to improve brain’s functionality than other cycles.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--In-text list-->
+    <div class="row">
+      <h2>Thesis Keyword</h2>
+      <div class="col-sm-10">
+        <ul>
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <li>
+              <p>Electroencephalogram</p>
+            </li>
+            <li>
+              <p>Power Spectral Density</p>
+            </li>
+            <li>
+              <p>Super brain yoga</p>
+            </li>
+            <li>
+              <p>Body composition</p>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <!--Structured list-->
+    <div class="row">
+      <h2>Thesis Structure</h2>
+      <div class="col-sm-10">
+        <div class="blog-structured-list">
+          <ol>
+            <li>Introduction (Home)</li>
+            <p>This part has overview about thesis. It also has abstract and experiment video.</p>
+            <li>Method</li>
+            <p>This chapter describes the protocol of EEG experiment and methodology of signal analysis.
+                The flow chart of the protocol is included in this chapter for better understanding.</p>
+            <li>Result</li>
+            <p>This chapter describes the results of Power Spectral Density (PSD) values obtained from signal analysis and body composition results.
+                The results of PSD consist of graph of average PSD values for alpha band in EEG signal obtained from each subjects for each cycle.
+                Bar graph is also presented in this part to compare average PSD values in alpha band before and after squatting.
+                The results of body composition composed of body capacitance, resistance, reactance and phase angle.
+                The phase angles are compared before and after squatting and the difference between them is calculated.</p>
+            <li>Conclusion</li>
+            <p>This chapter describes the conclusion of this thesis project. Several limitations are faced during completing the project and require future works for improvements.
+                Both limitations and recommendation for future work are explained in this chapter.</p>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!--Video half-->
+    <div class="row">
+      <h2>Superbrain yoga Video</h2>
+      <div class="col-sm-5">
+        <div class="blog-basic-text">
+          <p>Superbrain yoga is simple squat exercise. This special squat is known as improving brain activity with exercise effect.
+            This squat’s mechanism is based on acupuncture.
+            According to research that is studied by Dr. Joie P. Jones of the Dept. of Radiological Sciences at the University of California,
+            acupressure energy point for the brain congregate around the area of the ear that is affected by pressure from the exercise like to superbrain yoga.
+            In this squat, person use finger pads. As a result, this action stimulate neuropathways in the brain.
+            It means that the brain is stimulated by pressing acupuncture points on the earlobes.</p>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="blog-video">
+          <iframe class="youtube" src="https://www.youtube.com/embed/KSwhpF9iJSs" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!--Video half-->
+    <div class="row">
+      <h2>Experiment Video</h2>
+      <div class="col-sm-5">
+        <div class="blog-basic-text">
+          <p>First, subject need to fast for 4 hours. Some food and drink affect to EEG and body composition.
+            I measure subject's height and weight. This data use in body composition measurement.
+            After that, I measure the body composition.
+            Subject wear soft cap that has electrode for EEG.
+            I measure subject's EEG data during 3 minutes. In this time, subject close eyes with resting.
+            Subject's EEG data is measured with squatting. When I measure EEG in other day, I change this squatting cycles.
+            After squatting, I measure subject's EEG data during 3 minutes one more time.
+            Finally, I measure the body composition.</p>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="blog-video">
+          <iframe class="youtube" src="https://www.youtube.com/embed/6soHq8jAR_E" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+{% endblock %}

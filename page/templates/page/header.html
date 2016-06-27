@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DODAEGUK thesis</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+	<link rel="shortcut icon" type="image/png" sizes="16x16" href="{% static 'img/ico/F_icon.png' %}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        html,
+        body{
+            height:100%
+        }
+    </style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div class="container-fluid" style="min-height:95%; ">
+
+		<div class="row">
+			  <div class="col-sm-2">
+				  <br>
+				  <center>
+					<img src="{% static 'img/M_icon.png' %}" class="responsive-img" style='max-height:100px;' alt="mark">
+				  </center>
+			  </div>
+			  <div class="col-sm-10">
+				  <br>
+				  <center>
+				    <h1><p style="font-family: 'Raleway';font-size: 30px;">ASSESSMENT OF SQUATTING<br> ON BRAIN SIGNAL AND BODY COMPOSITION</p></h1> <!--Programming, Teaching, Entrepreneurship-->
+				  </center>
+			  </div>
+		</div>
+
+		<hr>
+
+		<div class="row">
+		  <div class="col-sm-2">
+			  <br>
+
+			   <!-- Great, til you resize. -->
+				<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+				<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+				  <ul class="nav nav-pills nav-stacked">
+					<li class="sidebar_color"><a href='/'>Home</a></li>
+					  <hr>
+					<li class="sidebar_color"><a href='/method/'>Method</a></li>
+					  <hr>
+				    <li class="sidebar_color"><a href='/psd/'>Result</a></li>
+					  <hr>
+				    <li class="sidebar_color"><a href='/conclusion/'>Conclusion</a></li>
+				  </ul>
+				</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+		  <div class="col-sm-10">
+
+
+			<br><br>
+			   {% block content %}
+			   {% endblock %}
+
+		  </div>
+		</div>
+	</div>
+
+	<br>
+
+	<footer class="footer">
+		<div class="container-fluid" style='margin-left:15px'>
+			<div class="col-sm-10">
+			<p><a href="mailto:eornrsayclub@naver.com" target="blank" style="color: #66ab60;">Contact</a> | <a href="https://www.linkedin.com/in/daekook-do-7b3b4794?trk=nav_responsive_tab_profile_pic" target="blank">LinkedIn</a> | <a href="https://kr.pinterest.com/eornrsayclub/" target="blank" style="color: #FA8517;">Pinterest</a></p>
+			</div>
+			<div class="col-sm-2">
+			<p class="pull-right"><a href="#">제일 위로</a></p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+{% extends "page/header.html" %}
+{% block content %}
+
+
+<br>
+
+<div class="blog">
+  <div class="blog-content">
+
+    <!--Basic Text Block-->
+    <div class="row">
+      <h2>Subject PSD data in alpha wave band</h2>
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>You can check each EEG PSD data in alpha wave band. </p>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class="row button-align">
+            <a href="/psd/sb1" class="action-button shadow animate blue">Subject1</a>
+            <a href="/psd/sb2" class="action-button shadow animate red">Subject2</a>
+            <a href="/psd/sb3" class="action-button shadow animate green">Subject3</a>
+            <a href="/psd/sb4" class="action-button shadow animate yellow">Subject4</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2>EEG PSD Bar Graph Result</h2>
+
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>This results is bar graph about average PSD value in alpha wave band.
+              This average value is made by using PSD value in alpha wave band. Each colors mean different subject.
+              And first bar means average data before squat, second bar means average data after squat in same color.
+              X-axis means cycles and Y-axis means PSD value.</p>
+        </div>
+      </div>
+        <br>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 2.30)'><iframe src="{% static 'img/result/eegpsdbarresult.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>This bar graph made by using difference between average PSD value before squat and average PSD value after squat.</p>
+        </div>
+      </div>
+        <br>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 2.30)'><iframe src="{% static 'img/result/eegpsdbarresultcom.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>This bar graph shows the bar chart average differences in each cycle.</p>
+        </div>
+      </div>
+        <br>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 2.30)'><iframe src="{% static 'img/result/eegpsdbarresultcomavr.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <h2>Phase angle Bar Graph Result</h2>
+
+      <div class="col-sm-10">
+        <div class="blog-basic-text">
+          <p>This results shows bar chart of difference phase angle in each cycle.
+              This bar graph shows difference value between phase angle value before squat and phase angle value after squat.
+              X-axis means cycles and Y-axis means difference of average phase angle value.</p>
+        </div>
+      </div>
+        <br>
+      <div class="col-sm-10">
+        <div class="blog-code">
+          {% load staticfiles %}
+          <div style='position:relative;padding-bottom:calc(100% / 2.30)'><iframe src="{% static 'img/result/bodycombarresult.png' %}" frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+
+ </div>
+</div>
+
+
+<br><br>
+{% endblock %}
+    <!--
+        {% for psd in s1b12_data %}
+        <p> {{ psd }} </p>
+        {% endfor %}
+        -->
